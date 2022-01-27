@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Layout</title>
+    <style>
+    .form-control{
+        padding: 15px;
+        margin-bottom: 10px;
+    }        
+    span{
+        color: tomato;
+    }
+    </style>
+  </head>
+  <body class="bg-light mx-lg-5">
+    <main>
+        <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand font-weight-bold" href="#">BPK SHOP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="left: 0;"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto text-dark">
+                <li class="nav-item p-1">
+                  <a class="nav-link text-info" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link text-dark" href="#">SHOP</a>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link text-dark" href="#">PICNIC</a>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link text-dark" href="#">PAGE</a>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link text-dark" href="#">PROMOTION</a>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link text-dark" href="#">BLOG</a>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link text-dark" href="contact.html">CONTACT US</a>
+                </li>
+            </div>
+            <div class="float-right">
+            <a href="#"><i class="bi-search text-dark"></i></a>
+            <a href="#"><i class="bi-cart pl-4 text-dark"></i></a>
+            <a href="#"><i class="bi-list pl-4 text-dark"></i></a>
+            </div>
+        </nav>
+        <section>
+          <div id="carouselExampleControls" class="carousel slider" data-ride="carousel">
+            <div class="carousel-inner heading">
+              <div class="carousel-item active">
+                <img class="d-block w-100 " style="opacity: 0.8;" src="Image/home.jpg" height="500px"alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>The World <br>Of Extreme Sports</h1>
+                  <p>SAVE <span style="color:dodgerblue;">20%</span> ON ALL APPAREL</p>
+                  <button class="btn text-white rounded-0" style="background-color:black;">SHOP NOW <i class="bi-arrow-right"></i></button>
+                </div>              
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="my-3 row">
+            <div class="col-lg-4 col-md-6 mb-2">
+            <button class="btn btn-primary w-100 p-3  rounded-0"><i class="fa fa-plane"></i> FREE SHIPPING WORLDWIDE</button>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+            <button class="btn btn-danger w-100 p-3 rounded-0"><i class="fas fa-sync-alt"></i> 100% MONEY BACK - 48 HOURS</button>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+            <button class="btn btn-warning w-100 p-3 text-white rounded-0"><i class="far fa-life-ring"></i> 24/7 ONLINE CUSTOMER SUPPORT</button>
+            </div>
+          </div>
+        </section>
+        <section>
+            <h2 class="ml-5 px-2 pt-3 mt-4">CONTACT US</h2>
+            <h3 id="success" class="text-success ml-5 px-3 pb-1"></h3>
+            <div class="container mb-5">
+                <div class="form-groups form-row">
+                    <input id="name" class="form-control col-7" type="text" placeholder="Name"><span id="nameerror" class="col-4 pt-3"></span>
+                </div>
+                <div class="form-group form-row">
+                    <input id="mail" class="form-control col-7" type="text" placeholder="Email"><span id="mailerror" class="col-4 pt-3"></span>
+                </div>
+                <div class="form-group form-row">
+                    <textarea id="msg" class="form-control col-7" placeholder="Enter Your Message"></textarea><span id="msgerror" class="col-4 pt-3"></span>
+                </div>
+                <button class="btn btn-primary" onclick="validate()">Send Message</button>
+            </div>
+        </section>
+        <section id="footer" class="py-5 text-white text-center ftr con">
+        
+          <img src="Image/pic.jpg" class="rounded-circle logo"/>
+          <div>
+          <p class="p-3">
+            <i class="fas fa-quote-left align-top"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, <br>aperiam iste labore repellat accusamus sequi beatae reprehenderit earum inventore obcaecati necessitatibus   <i class="fas fa-quote-right align-top"></i>
+          </p>
+            <h5 class="font-weight-bold">BILLY GRAHAM</h5>
+            <h6>web designer</h6>
+            <div class="btn-group-lg py-4">
+              <button class="btn text-white rounded-0" style="background-color: darkslateblue;" ><i class="bi-facebook"></i> FACEBOOK</button>
+              <button class="btn text-white rounded-0 bg-info"><i class="bi-instagram"></i> INSTAGRAM</button>
+              <button class="btn text-white rounded-0" style="background-color:purple;"><i class="bi-twitter"></i> TWITTER</button>
+              <button class="btn text-white rounded-0" style="background-color:palevioletred;"><i class="bi-x-circle"></i> DRIBBBLE</button>
+              <button class="btn text-white rounded-0 bg-danger" style="margin-right: 0px;"><i class="bi-pin"></i> PINTREST</button>
+            </div>
+            <h1 class="font-weight-bold">BPK</h1>
+            <p class="font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducim <br>impedit distinctatur porro magnam.</p>
+            <div style="font-size: 30px;"><span class="font-weight-bold text-info">. </span><span class="font-weight-bold text-danger">. </span><span class="font-weight-bold text-warning">.</span></div>
+            <img src="Image/paypal.jpg"  class="ftrimg">
+            <img src="Image/mastercard.jpg" class="ftrimg">
+            <img src="Image/visa.jpg" class="ftrimg">
+            <img src="Image/paytm.jpg" class="ftrimg">
+            <img src="Image/razor.jpg" class="ftrimg">
+            </div>
+        </section>
+        <div class="p-4 text-center">
+          Copyright &copy;2016 Designed by <a href="#">Azuretheme</a> - All Rights Reserved
+        </div>
+        </div>
+    </main>
+    <script>
+        function validate(){
+            var regName=/^[a-zA-z]{2,100}$/;
+            var regMail=/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+            var regMsg=/.{10,50}/;
+            var data=document.getElementById("name").value;
+            var mail=document.getElementById("mail").value;
+            var msg=document.getElementById("msg").value;
+            var namerr=document.getElementById("nameerror");
+            var mailerr=document.getElementById("mailerror");
+            var msgerr=document.getElementById("msgerror");
+            
+           
+            
+            if(!regName.test(data)){
+                msgerr.innerHTML=""; 
+                mailerr.innerHTML="";
+                namerr.innerHTML="Name is not valid!";
+                document.getElementById("name").focus();
+            }else if(!regMail.test(mail)){
+                namerr.innerHTML="";
+                msgerr.innerHTML=""; 
+                mailerr.innerHTML="Mail ID is not valid!";
+                document.getElementById("mail").focus();
+                
+            }else if(!regMsg.test(msg)){
+                namerr.innerHTML="";
+                mailerr.innerHTML="";
+                msgerr.innerHTML="Message Should contain minimum 10 character and maximum 50 character!";
+                document.getElementById("msg").focus();
+            }
+            else{
+                namerr.innerHTML="";
+                mailerr.innerHTML="";
+                msgerr.innerHTML=""; 
+                document.getElementById("success").innerHTML="Message Sent!";
+            }
+
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
